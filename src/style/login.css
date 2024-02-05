@@ -1,0 +1,18 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login__btn {
+  margin-bottom: 10px;
+}
+.captcha_container {
+  width: max-content;
+  margin: auto;
+  padding-top: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  border: 1px solid #d4d3d3;
+  background-color: #fff;
+  margin-top: -10px;
+}

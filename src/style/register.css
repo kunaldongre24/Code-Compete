@@ -1,0 +1,141 @@
+.register {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  max-width: 480px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12549019607843137);
+}
+.input__textBox,
+.form-container button,
+.login-button {
+  width: 100%;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #d4d3d3;
+  padding: 0 12px;
+  margin-top: 3px;
+  background-color: #fff;
+  font-size: 15px;
+}
+.input__textBox {
+  background-size: 19px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #444;
+  border: 1px solid #d0d7de;
+  font-size: 14px;
+  width: 100%;
+  max-width: 600px;
+  height: 42px;
+  box-shadow: inset 0 1px 0 rgba(208, 215, 222, 0.2);
+}
+.row-input div {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #616161;
+}
+.link {
+  box-sizing: border-box;
+}
+.main__btn {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input__textBox:focus {
+  outline: 1px solid #066ead;
+}
+.form-container button {
+  background-color: #1f58a3;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+}
+
+.form-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #d4d3d3;
+  font-size: 22px;
+  color: #222;
+}
+.form-header span {
+  margin-left: -2px;
+  margin-right: -2px;
+}
+.form-header span:nth-child(1) {
+  color: #ea382e;
+}
+.form-header span:nth-child(2) {
+  color: #1f58a3;
+}
+.form-header span:nth-child(3) {
+  color: #f9bc30;
+}
+.form-header span:nth-child(4) {
+  color: #aaa;
+}
+.fheader span {
+  font-weight: 600;
+}
+.fheader span:nth-child(1) {
+  color: #ea382e;
+}
+.fheader span:nth-child(2) {
+  color: #1f58a3;
+}
+.fheader span:nth-child(3) {
+  color: #f9bc30;
+}
+.fheader span:nth-child(4) {
+  color: #aaa;
+}
+.form-container .row-input label {
+  font-size: 11px;
+  color: rgb(71, 71, 71);
+  font-weight: 600;
+}
+.login-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 40px;
+}
+
+.login-button a {
+  text-decoration: none;
+  color: #066ead;
+}
+.form-container select {
+  color: #959699;
+}
+.form-container select option:not(:first-of-type) {
+  color: #222;
+}
+.form-container .row-input {
+  margin: 20px 0;
+}
+.input__textBox::placeholder {
+  color: #959699;
+}
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 100%;
+    height: 100%;
+    box-shadow: none;
+    background-color: transparent;
+    margin-top: 40px;
+  }
+}
+
+.non-user {
+  padding: 30px !important;
+}

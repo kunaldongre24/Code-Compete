@@ -1,0 +1,9 @@
+.english-rules-list {
+  font-size: 14px;
+}
+li {
+  padding-bottom: 10px;
+}
+.note-li li {
+  list-style-type: none;
+}
