@@ -247,6 +247,7 @@
 }
 .right-cont .userList {
   max-width: 100%;
+  height: auto;
 }
 .userList h1 {
   font-size: 1.2rem;
