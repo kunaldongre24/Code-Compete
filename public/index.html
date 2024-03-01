@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1 ,  maximum-scale=1.0,user-scalable=0"
     />
+
     <meta name="theme-color" content="#1F58A3" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -37,4 +38,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_HTML-full"
+    async=""
+  >
+    window.MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [["$$$", "$$$"]],
+        displayMath: [["$$$$$$", "$$$$$$"]],
+      },
+      "HTML-CSS": {
+        scale: 92,
+        linebreaks: { automatic: true },
+        fonts: ["TeX"],
+        webFont: "TeX",
+      },
+      SVG: {
+        linebreaks: { automatic: true },
+        fonts: ["TeX"],
+        scale: 92,
+      },
+    });
+  </script>
 </html>

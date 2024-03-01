@@ -1,0 +1,726 @@
+.editor-container {
+  width: 100%;
+  background-color: #131314;
+  box-sizing: border-box;
+  margin: 5px;
+  margin-left: 0;
+  max-height: calc(100vh - 50px);
+}
+
+.editor-container > div.flx-cn {
+  margin-bottom: 6px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #222;
+  height: auto !important;
+  min-width: 432px;
+}
+.submit-header {
+  font-size: 13px;
+  color: #aaa;
+  padding: 6px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding-top: 10px;
+}
+.back-btn {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.back-btn:hover {
+  color: #fff;
+}
+.back-btn:hover > svg {
+  fill: #fff;
+}
+.submit-header svg {
+  fill: #aaa;
+  margin-right: 6px;
+}
+.right-pane {
+  min-width: 432px;
+}
+.pd-15 {
+  padding: 10px 15px;
+}
+.lg-font {
+  font-size: 1.5rem;
+}
+
+.flx-cn {
+  border-radius: 8px;
+  min-height: 61px;
+  background-color: #222;
+  box-sizing: border-box;
+  max-height: calc(100vh - 50px);
+  margin-bottom: 0 !important;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+.reflex-container.vertical {
+  height: auto !important;
+}
+.bottom-pane {
+  background-color: #222;
+  min-height: 100px;
+  height: 300px;
+  border-radius: 8px;
+}
+.bottom-pane > div {
+  width: 100%;
+  height: 100%;
+}
+.reflex-container.vertical > .reflex-splitter.active,
+.reflex-container.horizontal > .reflex-splitter.active {
+  background-color: transparent !important;
+}
+.reflex-container.vertical > .reflex-splitter {
+  height: auto !important;
+  width: 8px !important;
+  background-color: transparent;
+  border: none !important;
+  box-sizing: content-box !important;
+  transition: none !important;
+  cursor: e-resize !important;
+}
+.reflex-container.horizontal > .reflex-splitter {
+  background-color: transparent;
+  height: 8px;
+  border: none !important;
+  box-sizing: border-box !important;
+  transition: none !important;
+  cursor: ns-resize !important;
+}
+.reflex-container.horizontal > .reflex-splitter:hover {
+  background-color: transparent !important;
+  border: none !important;
+  cursor: ns-resize !important;
+}
+.right-pane {
+  height: 100%;
+}
+.reflex-container.vertical > .reflex-splitter:hover {
+  background-color: transparent !important;
+  border: none !important;
+  cursor: e-resize !important;
+}
+.editor-container .problem-container {
+  color: #fff;
+}
+
+.pb-header {
+  display: flex;
+  width: 100%;
+  background-color: #262626;
+}
+.pb-body h1 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.MathJax {
+  border-radius: 5px !important;
+  line-height: 2rem !important;
+  padding: 0.125rem !important;
+  padding-bottom: 3px !important;
+  border: 1px solid #f7faff1f !important;
+  color: #eff1f6bf;
+  background-color: #ffffff12;
+}
+
+.note-cl .MathJax,
+.MathJax:has(.mfrac),
+li .MathJax,
+.MathJax_Display .MathJax {
+  border-radius: initial !important;
+  line-height: initial !important;
+  padding: initial !important;
+  border: initial !important;
+  color: #ddd !important;
+  background-color: initial;
+}
+
+table .MathJax {
+  border-radius: 0px !important;
+  line-height: auto !important;
+  padding: auto !important;
+  border: none !important;
+  color: #ddd;
+}
+.pb-body h2 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.tc-examples {
+  margin-top: 25px;
+}
+.tex-font-size-small {
+  font-size: 85%;
+}
+.tex-font-style-tt {
+  font-size: 110%;
+  font-family: courier new, monospace;
+}
+.io-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.css-1vc8h0l-diff-container pre {
+  line-height: initial !important;
+}
+
+.tex-graphics {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin-bottom: 2px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 5px;
+  border-radius: 5px;
+}
+img.tex-formula {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.blue-color {
+  /* Your styles here */
+  color: rgb(101, 101, 255) !important;
+}
+style[color="red"] {
+  background-color: #fff !important;
+}
+pre.tc-cnt {
+  padding: 10px;
+  padding-bottom: 0;
+  margin-top: 2px;
+  color: #fff;
+  white-space: pre-line;
+  line-height: 1.2em;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.015) 0,
+    rgba(255, 255, 255, 0.015) 1.2em,
+    transparent 0
+  );
+  background-size: 2.4em 2.4em;
+  background-origin: content-box;
+}
+pre.stderr {
+  color: rgb(255, 101, 101);
+  padding: 15px 10px;
+  border-radius: 6px;
+  background-color: rgba(248, 97, 92, 0.078);
+}
+.code-editor.viewer {
+  padding: 8px 10px;
+  margin-top: 15px;
+  padding-top: 4px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.code-editor.viewer .cm-scroller {
+  overflow: visible;
+}
+
+.code-editor.viewer .cm-focused {
+  outline: none;
+}
+.code-editor.viewer .ͼ16 {
+  background-color: transparent;
+}
+pre.code-format {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #aaa;
+  padding: 15px;
+}
+.io-container pre.hide-lines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.run-msg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin-top: -20px;
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  color: #aaa;
+  font-size: 14px;
+}
+.run-msg svg {
+  fill: #aaa;
+}
+.ft-pb {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 38px;
+  line-height: 38px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  background-color: #222;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-element {
+  font-size: 12px;
+  color: #ddd;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  white-space: nowrap;
+  width: max-content;
+  height: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  border-radius: 14px;
+  margin-right: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.head-io {
+  padding: 4px 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.flex-opt {
+  display: flex;
+  margin-top: 18px;
+}
+.slow-anim {
+  transition: 0.22s ease;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.flex-opt .opt {
+  font-size: 12px;
+  padding: 0.25rem 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  margin-right: 5px;
+  display: flex;
+  color: #ddd;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
+.flex-opt .opt svg {
+  margin-right: 2px;
+}
+
+.pb-header > div {
+  padding: 6px 10px;
+  background-color: #222;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+  font-weight: 500;
+}
+.pb-header div svg {
+  fill: rgb(255, 100, 100);
+  margin-right: 2px;
+}
+.code-svg {
+  fill: #4caf50 !important;
+}
+.css-1vc8h0l-diff-container span {
+  word-break: break-word !important;
+}
+.ex-pd div {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ddd;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.scroll-tc {
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  max-height: 100%;
+  padding: 10px 6px;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
+.scroll-tc .head-io {
+  font-size: 13px;
+  color: #fff;
+}
+.scroll-tc .tc-cnt {
+  padding-top: 10px;
+}
+.tc-svg {
+  fill: #089cff !important;
+}
+.flex-log {
+  display: flex;
+  align-items: center;
+}
+.pcn-head {
+  width: max-content;
+  color: #ddd;
+  fill: #aaa;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+.no-success {
+  color: rgb(255, 101, 101);
+}
+.no-run {
+  color: #aaa;
+}
+.pcn-head svg {
+  fill: #aaa !important;
+  margin: 0;
+  margin-right: 5px;
+}
+.pb-body {
+  padding: 10px 15px;
+  background-color: #222;
+  border-top-left-radius: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  font-size: 14px;
+  padding-bottom: 40px;
+  cursor: default;
+}
+.io-desc {
+  margin-top: 25px;
+}
+.pb-body .description {
+  margin-top: 15px;
+}
+.pb-body p {
+  margin: 0 0 1em !important;
+}
+.pb-body a {
+  color: #aec3ff;
+}
+.tex-font-style-bf {
+  font-weight: bold;
+  color: #fff;
+}
+.lang-sel {
+  height: 30px;
+  font-size: 13px;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  color: #aaa;
+  border: none;
+}
+header.code-head {
+  height: 40px;
+  padding: 0 10px;
+  padding-top: 5px;
+  position: relative;
+  background-color: #131314;
+  border: none;
+}
+.ͼ16 {
+  background-color: #222;
+}
+.io-container td {
+  border: none;
+  padding: 2px 8px;
+}
+.flex-header-tc {
+  display: flex;
+}
+.op-cnt {
+  padding: 10px 0;
+}
+.flex-header-tc .head-io {
+  border-radius: 0;
+}
+.countdown {
+  font-size: 13px;
+  max-height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  font-weight: 500;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: #ccc;
+  letter-spacing: 0.2px;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.countdown svg {
+  margin-right: 4px;
+  margin-top: -1px;
+  fill: #aaa !important;
+}
+.pd-10 {
+  padding: 0 10px;
+}
+.code-header {
+  height: 40px;
+  background-color: #222;
+}
+.code-cd-header {
+  height: 35px;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.ex-pd {
+  height: 40px;
+  line-height: 40px;
+  padding: 0px;
+}
+.racecar {
+  width: 150px;
+  height: 60px;
+  transform: rotateY(180deg);
+  object-fit: cover;
+}
+.code-editor {
+  background-color: #222;
+  padding-top: 8px;
+  border: none;
+  height: 100%;
+  box-sizing: border-box;
+}
+.cm-editor {
+  height: 100%;
+}
+select[disabled] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.code-m-cn {
+  display: flex;
+  background-color: #131314;
+  min-height: calc(100vh - 40px);
+}
+.ͼ16 .cm-gutters {
+  background-color: #222;
+}
+
+.code-body {
+  height: calc(100% - 70px);
+  width: 100%;
+  position: absolute;
+  padding-top: 50px;
+  bottom: 0;
+  top: 0;
+}
+.reflex-container > .reflex-element > .reflex-size-aware {
+  overflow: hidden;
+}
+.reflex-container > .reflex-element {
+  overflow: hidden !important;
+}
+.cm-scroller {
+  overflow-y: scroll;
+  padding-top: 10px;
+}
+.cm-scroller::-webkit-scrollbar-track {
+  background-color: transparent;
+  width: 10px !important;
+}
+
+.cm-scroller::-webkit-scrollbar-button:single-button {
+  display: none;
+}
+.code-lgo {
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  height: 40px;
+  line-height: 20px;
+  padding: 0 10px;
+  max-height: 20px;
+  align-items: center;
+}
+.btn-cnt button svg {
+  margin: 4px;
+  fill: #fff !important;
+  padding: 0;
+}
+.btn-cnt button {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 30px;
+  background: #4caf50;
+  color: #fff !important;
+  margin-left: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn-cnt button:first-child {
+  margin-left: 0px;
+  background-color: #005894;
+  color: #fff !important;
+}
+.btn-cnt button:first-child svg {
+  fill: #fff !important;
+}
+.pb-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 38px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.pb-footer > div a {
+  font-size: 12px;
+  color: #aec3ff;
+}
+.btn-cnt {
+  border-radius: 6px;
+}
+.btn-cnt button:hover {
+  background-color: #272727;
+}
+.pb-b-c {
+  height: calc(100% - 70px);
+  width: 100%;
+  overflow-y: auto;
+}
+.fix-head {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+@media (max-width: 1200px) {
+  .side-container {
+    display: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background-color: rgb(64, 64, 64);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(96, 96, 96);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(112, 112, 112);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(128, 128, 128);
+}
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+  background-color: rgb(64, 64, 64);
+
+  display: block;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: 12px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: 12px;
+  width: 16px;
+  background-position: center 2px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+/* Left */
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  height: 12px;
+  width: 12px;
+  background-position: 3px 3px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,50 50,100 50,0'/></svg>");
+}
+
+/* Right */
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  height: 12px;
+  width: 12px;
+  background-position: 3px 3px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(96, 96, 96)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(112, 112, 112)'><polygon points='0,0 0,100 50,50'/></svg>");
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:increment:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 0,100 50,50'/></svg>");
+}

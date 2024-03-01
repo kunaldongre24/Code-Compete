@@ -52,6 +52,7 @@ function Register() {
       setEmail("");
       setLoading(false);
     } catch (error) {
+      console.log(error);
       setError(
         error.response.data.msg
           ? error.response.data.msg

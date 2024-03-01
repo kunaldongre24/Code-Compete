@@ -8,24 +8,36 @@ function UserList({
   title,
   isReady,
   isAdmin,
+  isSpectator,
+  svg,
 }) {
+  const encodedSvg = encodeURIComponent(svg);
+  const svgSrc = `data:image/svg+xml,${encodedSvg}`;
   return (
     <div className="flex-col">
       <div className="flex-1in">
         <div className="profile-emo">
           <div className="pfp-cnt">
-            <div className="pfp"></div>
+            <div className="pfp">
+              <img src={svgSrc} className="pfp-img" />
+            </div>
           </div>
         </div>
         <div>
           <div className="pname">
             {title} {isMe ? "(you)" : null}
           </div>
-          <div
-            className={`status-msg ${isReady ? "success-msg" : "critical-msg"}`}
-          >
-            {isReady ? "Ready" : "No Ready"}
-          </div>
+          {isSpectator ? (
+            <div className="status-msg info-msg">Spectating</div>
+          ) : (
+            <div
+              className={`status-msg ${
+                isReady ? "success-msg" : "critical-msg"
+              }`}
+            >
+              {isReady ? "Ready" : "No Ready"}
+            </div>
+          )}
         </div>
       </div>
       {isAdmin && !isMe ? (

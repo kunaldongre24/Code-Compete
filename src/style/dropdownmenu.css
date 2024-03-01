@@ -1,0 +1,42 @@
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-button {
+  color: #ff8383 !important;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.skip-button {
+  display: block;
+  width: max-content;
+  padding: 10px;
+  background-color: #55201d;
+  text-align: center;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skip-button svg {
+  margin: 0;
+}
+.skip-button:hover {
+  background-color: #d32f2f;
+}
+
+.skip-button:focus {
+  outline: none;
+}

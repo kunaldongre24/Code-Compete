@@ -1,6 +1,7 @@
 .create-room {
   margin-bottom: 1.5rem;
   width: 100%;
+  margin-right: 20px;
 }
 .create-room .enter-btn {
   background-color: #8658ba;
@@ -20,6 +21,7 @@
   display: flex;
   justify-content: center;
 }
+
 .wc .success {
   background-color: #222;
   top: 100px;
@@ -83,6 +85,7 @@
 .flex-heading svg {
   fill: #444 !important;
   cursor: pointer;
+  padding: 0;
 }
 .copy-btn {
   color: #9c68d7;
@@ -96,21 +99,75 @@
   width: 100%;
   text-align: right;
 }
-.right-cont .userList {
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+.right-cont {
+  min-width: 400px;
 }
-.right-cont .userList {
+.right-cont .userList,
+.in-room .userList {
+  background-color: #202020;
+}
+.right-cont .userList,
+.in-room .userList {
   margin: 0;
 }
-.right-cont .userList button {
+.flex-left {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+.room-left-1 {
+  margin-right: 0;
+  flex: 3;
+  height: max-content !important;
+}
+.info-msg {
+  color: rgb(56, 119, 181) !important;
+  font-weight: 600 !important;
+}
+.enter-btn div.sl-txt {
+  font-size: 12px;
+  font-weight: 400;
+}
+.create-room .enter-btn {
+  padding: 1rem 2.5rem;
+}
+
+.ready-btn {
+  background-color: #be3535 !important;
+}
+.ready-btn:hover {
+  background-color: #992b2b !important;
+  color: #fff;
+}
+
+.not-ready-btn {
+  background-color: #398d17 !important;
+}
+.not-ready-btn:hover {
+  color: #fff;
+}
+.container-user {
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex: 1;
+}
+.right-cont {
+  flex: 1;
+}
+.right-cont .userList button,
+.in-room .userList {
 }
 .right-cont .flex-col {
   background-color: rgba(0, 0, 0, 0.05) !important;
 }
 .dark-ws {
   color: #fff !important;
-  background-color: #111 !important;
+  background-color: #131314 !important;
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 .dark-ws > .para {
@@ -136,13 +193,13 @@
   padding: 14px;
   overflow: visible;
   border-radius: 50%;
-  fill: #383838 !important;
+  fill: #fff !important;
 }
 .btn-cnt svg {
-  background-color: rgba(0, 0, 0, 0.06);
+  background-color: rgba(255, 255, 255, 0.06);
 }
 .btn-cnt svg:hover {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.12);
 }
 .room-header {
   width: 100%;
@@ -170,9 +227,8 @@
   margin: 0;
 }
 .chat-area {
-  background-color: #fff;
+  background-color: #202020;
   margin-bottom: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
   font-size: 13px;
   min-height: 400px;
   max-height: 400px;
@@ -181,6 +237,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .chat-fb {
   flex: 1;
@@ -211,14 +268,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flex-heading h1 {
+  line-height: 20px;
+}
+.flex-heading .invite {
+  width: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+.flex-heading .invite span {
+  padding: 0;
 }
 .chat-area div.chat-msg:nth-child(2n-1) {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 .chat-msg {
   padding: 5px;
   word-break: break-word;
-  color: #222;
+  color: #fff;
   font-weight: 400;
 }
 .success-msg {
@@ -236,10 +306,10 @@
   font-weight: bold;
 }
 .input-box {
-  background-color: #fff;
+  background-color: #222;
 }
+
 .userList {
-  max-width: 500px;
   height: max-content;
   margin-top: 100px;
   padding-left: 0;
@@ -249,14 +319,72 @@
   max-width: 100%;
   height: auto;
 }
+.list-box {
+  height: 100%;
+}
 .userList h1 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 }
 .user-row {
   margin-top: 10px;
   padding-top: 10px;
 }
+.room-left-1 select {
+  opacity: 0;
+}
 
+.flex-class .input-group {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.flex-class {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.room-left-1 label {
+  position: absolute;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #ddd;
+  width: calc(50% - 30px);
+}
+.join-btn {
+  background: #ff9000 !important;
+}
+.disabled-ebtn {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+select:disabled {
+  cursor: default;
+}
+.disabled-ebtn:hover {
+  background-color: #8658ba !important;
+  color: #fff;
+}
+.room-left-1 label.enabled {
+  background-image: url("../images/arrow_drop_down_FILL0_wght400_GRAD0_opsz24.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+.left-1 .enter-btn {
+  margin-right: 10px;
+}
+label span {
+  color: rgb(255, 231, 159);
+}
+.flex-class {
+  display: flex;
+}
+.room-left-1 .input-group {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
 .userList .profile-emo {
   height: 50px !important;
   width: 50px !important;
@@ -299,10 +427,13 @@ button.mute-btn {
 button.mute-btn:hover {
   background-color: #d49100;
 }
-
+.modal-list {
+  max-width: 400px;
+  background-color: #222;
+}
 .userList .flex-col {
   margin-top: 1px;
-  background: rgba(0, 0, 0, 0.02) !important;
+  background: rgba(255, 255, 255, 0.02) !important;
   display: flex;
   align-items: center;
   width: 100%;
@@ -325,8 +456,8 @@ button.mute-btn:hover {
   margin: 0;
 }
 .userList .pname {
-  font-size: 1rem;
-  color: #222;
+  font-size: 0.9rem;
+  color: #fff;
 }
 .input-box input {
   width: 100%;
@@ -340,8 +471,30 @@ button.mute-btn:hover {
   box-sizing: border-box;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  background-color: #222;
+  color: #fff;
 }
 
-.input-box input:focus {
-  border: 1px solid #56b2fd;
+.countr {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 294px;
+}
+.countr h1 {
+  font-size: 30px;
+}
+h1.count-num {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #e68200;
+}
+@media screen and (max-width: 1270px) {
+  .create-room {
+    margin-right: 0 !important;
+  }
+  .flex-left {
+    margin: 0;
+  }
 }

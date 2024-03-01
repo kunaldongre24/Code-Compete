@@ -1,2 +1,2 @@
-const ENDPOINT = "http://localhost:8000";
+const ENDPOINT = "https://fly777.in";
 export default ENDPOINT;

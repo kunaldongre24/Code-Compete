@@ -1,15 +1,15 @@
 .wc {
   width: 100%;
+  color: #fff;
 }
 .wc-cnt {
   width: 100%;
   display: flex;
-  max-width: 1280px;
-  padding: 10px 20px;
+  max-width: 1270px;
   padding-top: 80px;
+  margin: auto;
   flex-wrap: wrap;
   box-sizing: border-box;
-  align-items: flex-start;
 }
 
 .left-1 {
@@ -20,6 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 20px;
+  margin-bottom: 1.25rem;
   justify-content: space-between;
 }
 
@@ -30,6 +31,9 @@
   background-repeat: no-repeat;
   background-position: right 5% bottom 0%;
   background-size: auto 100%;
+}
+.no-ser {
+  padding: 0 20px;
 }
 .left-cont:hover {
   background-image: url("../images/rocket.gif");
@@ -47,23 +51,37 @@
   background-size: 50%;
   background-position: right -10% bottom 30%;
 }
-
+.j-rc {
+  background-image: url("../images/racecar.gif");
+  background-size: 20%;
+  background-position: right 5% top 50%;
+  overflow: hidden !important;
+}
+.abs-cnt {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+  border-radius: 8px;
+}
 .box {
   transition-delay: 0.2s;
-  background-color: #222;
-  border: 1px solid #373737;
+  background-color: #202020;
   border-radius: 8px;
   padding: 1.25rem;
   background-repeat: no-repeat;
   color: #fff;
   box-sizing: border-box;
-  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
 }
+.container-user .box {
+  border: none !important;
+}
+
 .box h1 {
-  font-size: 1.3rem;
-  font-weight: 700;
+  font-size: 1.2rem;
+  font-weight: 600;
   padding: 0;
   margin: 0;
+  /* font-family: "Pixelify Sans", "Poppins", sans-serif; */
 }
 .box h3 {
   font-weight: 400;
@@ -99,7 +117,6 @@
   flex: 0 1 auto;
   width: 49%;
   height: auto;
-  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
   box-sizing: border-box;
   margin-top: 0 !important;
@@ -141,17 +158,17 @@
   width: 100%;
   border-radius: 10px;
   box-sizing: border-box;
-  background-color: #f5f5f5;
+  background-color: transparent;
   box-shadow: none;
   font-size: 0.8em;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-weight: 500;
-  color: #353535;
+  color: #ddd;
   margin-bottom: 1rem;
 }
 .welcome-screen > div {
-  color: #555;
+  color: #ddd;
 }
 @media screen and (max-width: 1064px) {
   .left-1 {
@@ -181,10 +198,7 @@
   .input-group {
     flex-wrap: wrap;
   }
-  .input-group label,
-  .input-group > div {
-    min-width: 100%;
-  }
+
   .input-group label {
     margin-bottom: 4px;
     font-size: 0.8em;

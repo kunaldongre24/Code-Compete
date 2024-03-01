@@ -118,7 +118,7 @@ function Main(props) {
                 navigate("/");
               }}
             >
-              <span className="svgBtn_text">LOGOUT</span>
+              <span>LOGOUT</span>
             </button>
           </div>
         </header>
@@ -189,7 +189,7 @@ function Main(props) {
           </div>
         </div>
       </div>
-      <div className={fullSidebar ? "left-space" : "no-space"}>
+      <div className={fullSidebar && !inRoom ? "left-space" : "no-space"}>
         <Routes>
           <Route
             exact
@@ -226,6 +226,7 @@ function Main(props) {
                 <Room
                   setRoomCreated={props.setRoomCreated}
                   setInRoom={setInRoom}
+                  inRoom={inRoom}
                 />
               </Suspense>
             }

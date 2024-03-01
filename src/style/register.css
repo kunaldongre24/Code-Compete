@@ -7,8 +7,10 @@
   width: 100%;
   padding: 30px;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: #222 !important;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12549019607843137);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .input__textBox,
 .form-container button,
@@ -16,18 +18,26 @@
   width: 100%;
   height: 50px;
   border-radius: 6px;
-  border: 1px solid #d4d3d3;
+  border: 1px solid rgba(0, 0, 0, 0.01);
   padding: 0 12px;
   margin-top: 3px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
   font-size: 15px;
+}
+.login-button {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px 12px;
+  box-sizing: content-box;
+  height: 50px !important;
+  color: #fff !important;
+  font-weight: bold;
 }
 .input__textBox {
   background-size: 19px;
   padding: 8px 12px;
   border-radius: 6px;
-  color: #444;
-  border: 1px solid #d0d7de;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 14px;
   width: 100%;
   max-width: 600px;
@@ -37,7 +47,7 @@
 .row-input div {
   font-size: 12px;
   margin-top: 5px;
-  color: #616161;
+  color: #aaa;
 }
 .link {
   box-sizing: border-box;
@@ -62,13 +72,15 @@
 
 .form-header {
   padding-bottom: 12px;
-  border-bottom: 1px solid #d4d3d3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 22px;
   color: #222;
 }
 .form-header span {
   margin-left: -2px;
   margin-right: -2px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 600;
 }
 .form-header span:nth-child(1) {
   color: #ea382e;
@@ -83,6 +95,7 @@
   color: #aaa;
 }
 .fheader span {
+  font-family: "Pixelify Sans", sans-serif;
   font-weight: 600;
 }
 .fheader span:nth-child(1) {
@@ -99,7 +112,7 @@
 }
 .form-container .row-input label {
   font-size: 11px;
-  color: rgb(71, 71, 71);
+  color: #aaa;
   font-weight: 600;
 }
 .login-button {
